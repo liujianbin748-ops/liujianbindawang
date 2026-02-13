@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///C:/Users/Laity/Desktop/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>精选号铺</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <style>
+        :root { --blue: #3b82f6; --gray: #f7f7f7; --text: #333; }
+        body { font-family: -apple-system, sans-serif; background: var(--gray); margin: 0; color: var(--text); padding-bottom: 70px; }
+        
+        /* 顶部导航 */
+        .nav-header { background: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo-area { display: flex; align-items: center; gap: 8px; font-weight: bold; }
+        
+        /* 公告板 */
+        .card { background: #fff; margin: 12px; padding: 16px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .notice-title { color: #ef4444; font-weight: bold; font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+        .notice-content { font-size: 13px; line-height: 1.6; color: #666; }
+
+        /* 分类网格 */
+        .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 12px; }
+        .cat-item { background: #fff; padding: 12px; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-size: 14px; text-decoration: none; color: inherit; }
+        .cat-icon { width: 30px; height: 30px; }
+
+        /* 商品列表 */
+        .list-title { padding: 15px 15px 5px; font-size: 13px; color: #888; }
+        .product-item { background: #fff; display: flex; padding: 15px; border-bottom: 1px solid #f2f2f2; align-items: center; cursor: pointer; }
+        .product-img { width: 65px; height: 65px; border-radius: 10px; margin-right: 15px; object-fit: cover; }
+        .product-info { flex: 1; }
+        .product-name { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+        .product-price { color: #333; font-size: 16px; font-weight: 700; }
+        .stock-tag { font-size: 11px; color: #10b981; background: #ecfdf5; padding: 2px 6px; border-radius: 4px; margin-left: 5px; }
+
+        /* 底部固定导航 */
+        .tab-bar { position: fixed; bottom: 0; width: 100%; height: 60px; background: rgba(255,255,255,0.95); border-top: 1px solid #eee; display: flex; justify-content: space-around; align-items: center; backdrop-filter: blur(10px); }
+        .tab-item { text-align: center; font-size: 11px; color: #999; text-decoration: none; }
+        .tab-item.active { color: var(--blue); }
+        .tab-icon { font-size: 20px; margin-bottom: 2px; }
+    </style>
+</head>
+<body inmaintabuse="1">
+
+<div class="nav-header">
+    <div class="logo-area">✈️ <span contenteditable="true">刘建斌大王的店</span></div>
+    <div style="font-size: 14px; color: var(--blue);">订单查询</div>
+</div>
+
+<div class="card">
+    <div class="notice-title">📢 店铺公告</div>
+    <div class="notice-content" contenteditable="true">
+        —— 没有客服瞎几把乱搞<br>
+        —— 自动发货，等着被骗<br>
+        —— 虚拟商品一经售出，从不退款。
+    </div>
+</div>
+
+<div class="cat-grid">
+    <div class="cat-item">🚀 <span contenteditable="true">VPN网络节点</span></div>
+    <div class="cat-item">🍎 <span contenteditable="true">苹果ID</span></div>
+    <div class="cat-item">💬 <span contenteditable="true">TG账号</span></div>
+    <div class="cat-item">🌟 <span contenteditable="true">增值服务</span></div>
+</div>
+
+<div class="list-title">产品列表 (3)</div>
+
+<div class="product-list">
+    <div class="product-item" onclick="window.location.href=&#39;https://t.me/yourname&#39;">
+        &lt; img src="https://img.icons8.com/color/96/apple-logo.png" class="product-img"&gt;
+        <div class="product-info">
+            <div class="product-name" contenteditable="true">独享苹果ID + 小火箭</div>
+            <div class="product-price" contenteditable="true">¥58.00 <span class="stock-tag">有现货</span></div>
+        </div>
+        <div style="color:#ccc">•••</div>
+    </div>
+
+    <div class="product-item" onclick="window.location.href=&#39;https://t.me/yourname&#39;">
+        &lt; img src="https://img.icons8.com/color/96/shield.png" class="product-img"&gt;
+        <div class="product-info">
+            <div class="product-name" contenteditable="true">🍎 VPN节点 / 年付套餐</div>
+            <div class="product-price" contenteditable="true">¥128.00 <span class="stock-tag">有现货</span></div>
+        </div>
+        <div style="color:#ccc">•••</div>
+    </div>
+</div>
+
+<div class="tab-bar">
+    <a href="file:///C:/Users/Laity/Desktop/index.html" class="tab-item active"><div class="tab-icon">🏠</div>首页</a>
+    <a href="file:///C:/Users/Laity/Desktop/index.html#" class="tab-item"><div class="tab-icon">📋</div>订单</a>
+    <a href="file:///C:/Users/Laity/Desktop/index.html#" class="tab-item" style="transform: scale(1.2);"><div class="tab-icon" style="color:var(--blue)">⊕</div>新增</a>
+    <a href="file:///C:/Users/Laity/Desktop/index.html#" class="tab-item"><div class="tab-icon">👤</div>我的</a>
+</div>
+
+
+<script src="chrome-extension://blfccpedeamkmokgoelnppalklpnemkm/content/windowDataMessage.js"></script><script src="chrome-extension://blfccpedeamkmokgoelnppalklpnemkm/sm.bundle.js" data-pname="aixdownload-v3" data-asset-path="https://aix3.s3.ap-east-1.amazonaws.com"></script></body></html>
